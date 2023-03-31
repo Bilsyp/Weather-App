@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-slate-800">
+
+  <div class="container mx-auto p-2">
+    <form action="" class="text-white flex justify-center items-center flex-col my-5 px-3 z-10">
+      <input placeholder="Search..." type="text" class="bg-transparent border-b outline-none focus:px-3 focus:py-2 duration-300 border-lime-500">
+      <ul class="w-full ">
+
+      </ul>
+    </form>
+    <div class="text-white wheater text-center my-10">
+    </div>
+    <footer class="absolute bottom-0 my-2 text-center text-white text-sm text-gray-800">
+      <p class="text-gray-500">Jika tidak muncul secara default location user silahkan coba untuk search location anda berada.</p>
+    </footer>
+  </div>
+  <script src="lodash/package/lodash.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
