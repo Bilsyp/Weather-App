@@ -98,7 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(`Latitude : ${crd.latitude}`);
     console.log(`Longitude: ${crd.longitude}`);
     console.log(`More or less ${crd.accuracy} meters.`);
-    generateWheater(crd.latitude,crd.longitude)
   }
 
   function error(err) {
