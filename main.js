@@ -8,12 +8,12 @@ const start = _.debounce(search, [600])
 
 async function fetchData(lat, lon) {
   if (input.value !== "") {
-    const fetchDatas = await fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${input.value}`)
+    const fetchDatas = await fetch(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${input.value}`)
     const data = await fetchDatas.json()
     return data
   } else {
     // with Parameter for Default
-    const fetchDatax = await fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${lat},${lon}`)
+    const fetchDatax = await fetch(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${lat},${lon}`)
     const datax = await fetchDatax.json()
     return datax
   }
