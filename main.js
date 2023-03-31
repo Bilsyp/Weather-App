@@ -36,7 +36,7 @@ function generateWheater(data) {
   const icons = 'http:' + data.current.condition.icon
 
   const template = `<div class="">
-              <h2 class="font-bold text-orange-600 text-3xl">Wheater</h2>
+              <h2 class="font-bold text-orange-600 text-3xl">Weather</h2>
               <div>
               <div class="flex my-10 justify-center gap-x-10 items-center">
               <h2>${data.current.temp_c} &#8451;</h2>
