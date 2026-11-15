@@ -33,7 +33,7 @@ async function search() {
 
 function generateWheater(data) {
   const wheater = document.querySelector(".wheater")
-  const icons = 'http:' + data.current.condition.icon
+  const icons = 'https:' + data.current.condition.icon
 
   const template = `<div class="">
               <h2 class="font-bold text-orange-600 text-3xl">Weather</h2>
